@@ -5,18 +5,40 @@ double rerata(double a, double b) {
     return (a + b) / 2;
 }
 
-string status(double rata) {
-    if (rata >= 70)
-        return "lulus";
+string status(double rata){
+    if (rata >= 70) || >= 80)
+    return "asroni lulus";
     else
-        return "gagal";
+    return "asroni gagal";
 }
 
 string status2(double rata, double nil) {
     if (rata >= 70 || nil >= 80)
-    return "lulus";
+    return "lia lulus";
     else
-    return "gagal";
+    return "lia gagal";
+}
+string status3(double rata, double nil) {
+    if (rata >= 70 || nil >= 80)
+    return "joko lulus";
+    else
+    return "joko gagal";
+}
+
+void display() {
+    cout << endl;							
+    cout << "==================================" << endl; 
+    cout << "Kandidat Yang Diterima" << endl; 
+    cout << "==================================" << endl; 
+    cout << "1";
+}
+
+void unsorted() {
+    cout << endl;							
+    cout << "==================================" << endl;
+    cout << "Kandidat Yang Tidak Diterima" << endl; 
+    cout << "==================================" << endl; 
+    cout << "1";
 }
 
 int main() {
@@ -30,4 +52,5 @@ int main() {
     (rerata(ni1B, ni1M), ni1B);
     return 0;
 }
+
 
